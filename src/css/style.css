@@ -1,0 +1,153 @@
+:root{
+    --color-bg-gray-new: #f3f2f2;
+    --color-black: #000;
+    --color-life-green: #3dcd58;
+    --color-white: #fff;
+    --color-text-gray: #333;
+    --color-sky-blue: #42b4e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.body--bg{
+    background-color: var(--color-bg-gray-new);
+}
+
+.text--color{
+    color: var(--color-life-green);
+}
+
+.btn--color{
+    background-color: var(--color-sky-blue);
+    color: var(--color-white);    
+}
+
+.container__logo{
+    background-color: var(--color-life-green);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #2c2c31;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #3DCD58;
+  }
+  
+
+.navbar {
+    background-color: #3DCD58;
+}
+.navbar-brand {
+    margin-right: auto;
+}
+
+.nav-link{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none; 
+    box-shadow: none; 
+}
+
+
+.nav-link.active{
+    color: black;
+}
+
+.headline {
+    text-align: left;
+    margin-bottom: 50px; 
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.card-img-top {
+    max-height: 500px; /* Defina a altura máxima da imagem */
+    object-fit: cover; /* Para garantir que a imagem preencha o espaço, mesmo que seja redimensionada */
+}
+.card-date {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+.btn-primary {
+    background-color: #55D1FE;
+    border-color: #55D1FE;
+}
+
+.btn-primary:hover {
+    background-color: #36a1d3;
+    border-color: #36a1d3;
+}
+
+
+.account-icon {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 10px; 
+}
+
+
+
+.account-icon i {
+    font-size: 24px;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.account-icon i:hover {
+    font-size: 24px;
+    color: #000000;
+    transition: 0.2s;
+}
+
+.account {
+    position: absolute;
+    top: 100%; 
+    right: 22px; 
+    display: none;
+    font-size: 44px;
+    color: #3DCD58;
+}
+
+@media (max-width: 767px) {
+    .account {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .container__logo {
+      text-align: center;
+    }
+    .w-25 {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+
+hr{
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
