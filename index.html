@@ -28,7 +28,7 @@
      <div class="container d-flex align-items-center justify-content-center min-vh-100">
     <div class="card p-4" style="max-width: 400px; width: 100%;">
       <h2 class="text-center mb-4">Login</h2>
-      <form>
+      <form onsubmit="">
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" id="email" name="email" required>
@@ -41,7 +41,7 @@
           <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
           <label class="form-check-label" for="rememberMe">Lembrar de mim</label>
         </div>
-        <button type="submit" class="btn btn-primary w-100">Entrar</button>
+        <button id="btnEntrar" type="submit" class="btn btn-primary w-100">Entrar</button>
       </form>
     </div>
   </div>
@@ -51,5 +51,6 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="./src/js/autentitcation.js"></script>
   </body>
 </html>
