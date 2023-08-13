@@ -14,6 +14,11 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <style>
+      body {
+        overflow: hidden; /* Impede a rolagem da página */
+      }
+    </style>
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body class="body--bg d-flex flex-column vh-100 m-0">
@@ -30,7 +35,7 @@
       <h2 class="text-center mb-4">Login</h2>
       <form onsubmit="">
         <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
+          <label for="email" class="form-label">E-mail ou usuário</label>
           <input type="email" class="form-control" id="email" name="email" required>
         </div>
         <div class="mb-3">
