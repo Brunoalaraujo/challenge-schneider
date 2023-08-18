@@ -71,6 +71,7 @@
     color: black;
 }
 
+
 .headline {
     text-align: left;
     margin-bottom: 50px; 
@@ -78,10 +79,15 @@
     text-transform: uppercase;
 }
 
+.card-img{
+    border-radius: 10px;
+}
+
 .card-img-top {
     max-height: 500px; /* Defina a altura máxima da imagem */
     object-fit: cover; /* Para garantir que a imagem preencha o espaço, mesmo que seja redimensionada */
 }
+
 .card-date {
     position: absolute;
     bottom: 10px;
@@ -150,4 +156,12 @@
 hr{
     margin-bottom: 70px;
     margin-top: 40px;
+}
+
+#textdesafio{
+    margin-top: -2px;
+}
+
+button.btn.btn-primary {
+    margin-bottom: 15px;
 }
