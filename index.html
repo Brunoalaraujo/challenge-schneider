@@ -14,14 +14,9 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <style>
-      body {
-        overflow: hidden; /* Impede a rolagem da página */
-      }
-    </style>
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
-  <body class="body--bg d-flex flex-column vh-100 m-0">
+  <body class="body--bg d-flex flex-column vh-100 m-0 overflow-hidden">
     <header class="container__logo py-3">
       <div class="container d-flex justify-content-center">
         <img src="./src/img/schneiderlogo.svg" alt="" />
@@ -32,21 +27,25 @@
     >
      <div class="container d-flex align-items-center justify-content-center min-vh-100">
     <div class="card p-4" style="max-width: 400px; width: 100%;">
-      <h2 class="text-center mb-4">Login</h2>
+      <h2 class="text-center mb-4 text--color">Login</h2>
       <form onsubmit="">
         <div class="mb-3">
-          <label for="email" class="form-label">E-mail ou usuário</label>
-          <input type="email" class="form-control" id="email" name="email" required>
+          <label for="email" class="form-label text--color">EMAIL</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="example@schneider.com" required>
         </div>
         <div class="mb-3">
-          <label for="password" class="form-label">Senha</label>
-          <input type="password" class="form-control" id="password" name="password" required>
+          <label for="password" class="form-label text--color">PASSWORD</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="*****" required>
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
-          <label class="form-check-label" for="rememberMe">Lembrar de mim</label>
+        <div class="mb-3 form-check d-flex align-items-center justify-content-center">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+            <label class="form-check-label" for="rememberMe">Lembrar de mim</label>
+          </div>
         </div>
-        <button id="btnEntrar" type="submit" class="btn btn-primary w-100">Entrar</button>
+        <div class="d-flex justify-content-center">
+          <button id="btnEntrar" type="submit" class="btn btn-primary w-50">Entrar</button>
+        </div>
       </form>
     </div>
   </div>
