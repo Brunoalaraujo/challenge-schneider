@@ -72,84 +72,176 @@
     <main>
       <div class="container mt-4">
         <h2 class="headline">Destaques do mês</h2>
-        <div class="row d-flex align-items-stretch">
-          <div class="col-md-4">
-            <div class="card h-100">
+        <!-- Carrossel -->
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
               <img
                 src="../img/blog1.png"
-                class="card-img-top"
+                class="d-block w-100"
                 alt="Imagem do Post 1"
               />
-              <div class="card-body">
-                <h5 class="card-title">Título do Post 1</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dolorum id vitae temporibus facilis nesciunt neque doloribus,
-                  eaque cumque ratione. Maiores, sed. Ipsum praesentium nam
-                  explicabo quae asperiores, reprehenderit deserunt
-                  providentLorem ipsum dolor sit amet consectetur, adipisicing
-                  elit. Dolorum id vitae temporibus facilis nesciunt neque
-                  doloribus, eaque cumque ratione. Maiores, sed. Ipsum
-                  praesentium nam explicabo quae asperiores, reprehenderit
-                  deserunt provident..
+              <div class="carousel-caption">
+                <h5>Reduzindo A nossa pegada ecológica</h5>
+                <p>
+                  Nos dias de hoje, a preocupação com o meio ambiente é cada vez
+                  mais evidente. Buscar formas de reduzir a nossa pegada
+                  ecológica se tornou essencial para um futuro sustentável.
+                  Neste post, vamos explorar maneiras simples de ser mais
+                  sustentável em casa, desde a redução do consumo de energia até
+                  a minimização do desperdício.
                 </p>
-                <div class="d-flex justify-content-between">
-                  <a href="#" class="btn btn-primary">Leia mais</a>
-                  <span class="card-date">10 de Agosto de 2023</span>
-                </div>
+                <a href="#" class="btn btn-primary">Leia mais</a>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100">
+            <div class="carousel-item">
               <img
                 src="../img/blog2.png"
-                class="card-img-top"
+                class="d-block w-100"
                 alt="Imagem do Post 2"
               />
-              <div class="card-body">
-                <h5 class="card-title">Título do Post 2</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dolorum id vitae temporibus facilis nesciunt neque doloribus,
-                  eaque cumque ratione. Maiores, sed. Ipsum praesentium nam
-                  explicabo quae asperiores, reprehenderit deserunt
-                  provident.Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit. Dolorum id vitae temporibus facilis nesciunt neque
-                  doloribus, eaque cumque ratione. Maiores, sed. Ipsum
-                  praesentium nam explicabo quae asperiores, reprehenderit
-                  deserunt provident.
+              <div class="carousel-caption">
+                <h5>Práticas de reciclagem no dia a dia</h5>
+                <p>
+                  A reciclagem desempenha um papel fundamental na redução do
+                  impacto ambiental. Neste post, vamos compartilhar dicas
+                  práticas sobre como incorporar a reciclagem em sua rotina
+                  diária. Desde separar corretamente os materiais até reutilizar
+                  itens de forma criativa, você pode contribuir para um mundo
+                  mais sustentável.
                 </p>
-                <div class="d-flex justify-content-between">
-                  <a href="#" class="btn btn-primary">Leia mais</a>
-                  <span class="card-date">15 de Agosto de 2023</span>
-                </div>
+                <a href="#" class="btn btn-primary">Leia mais</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/blog3.png"
+                class="d-block w-100"
+                alt="Imagem do Post 3"
+              />
+              <div class="carousel-caption">
+                <h5>Alimentação sustentável: do campo à mesa</h5>
+                <p>
+                  A escolha de alimentos sustentáveis é uma maneira poderosa de
+                  impactar o meio ambiente positivamente. Neste post, vamos
+                  explorar como fazer escolhas alimentares conscientes, desde
+                  optar por alimentos orgânicos e locais até reduzir o
+                  desperdício de comida em casa. Sua alimentação pode contribuir
+                  para um planeta mais saudável.
+                </p>
+                <a href="#" class="btn btn-primary">Leia mais</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img
-                src="../img/blog3.png"
-                class="card-img-top"
-                alt="Imagem do Post 3"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Título do Post 3</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deleniti unde quia mollitia cumque, ut odit distinctio! Quos
-                  quasi velit rem quisquam praesentium, iste facilis aliquam
-                  placeat perspiciatis beatae? Nam, neque!Lorem ipsum dolor sit
-                  amet consectetur, adipisicing elit. Dolorum id vitae
-                  temporibus facilis nesciunt neque doloribus, eaque cumque
-                  ratione. Maiores, sed. Ipsum praesentium nam explicabo quae
-                  asperiores, reprehenderit deserunt provident.
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+        <!-- Primeira notícia -->
+        <div class="row">
+          <div class="mb-4 mt-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <img src="../img/blog1.png" class="col-md-5 img-fluid" alt="Notícia 1" />
+              <div class="col-md-5 news-content ">
+                <h3>Reduzindo o desperdício de plástico</h3>
+                <p>
+                  Descubra maneiras fáceis de reduzir o desperdício de plástico
+                  em casa. Desde o uso de sacolas e recipientes reutilizáveis
+                  até a escolha de produtos com embalagens mínimas, você pode
+                  ter um grande impacto no meio ambiente.
                 </p>
-                <div class="d-flex justify-content-between">
-                  <a href="#" class="btn btn-primary">Leia mais</a>
-                  <span class="card-date">20 de Agosto de 2023</span>
-                </div>
+                <a href="#" class="btn btn-primary">Leia mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Segunda notícia -->
+        <div class="row">
+          <div class="mb-4 mt-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="col-md-5 news-content">
+                <h3>Jardinagem sustentável</h3>
+                <p>
+                  Aprenda a criar um jardim sustentável que promova a
+                  biodiversidade e economize água. Descubra dicas para usar
+                  compostagem, escolher plantas nativas e reduzir o uso de
+                  produtos químicos prejudiciais.
+                </p>
+                <a href="#" class="btn btn-primary">Leia mais</a>
+              </div>
+              <img src="../img/blog2.png" class="col-md-5 img-fluid" alt="Notícia 2" />
+            </div>
+          </div>
+        </div>
+        <!-- Terceira notícia -->
+        <div class="row">
+          <div class="mb-4 mt-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <img src="../img/blog3.png" class="col-md-5 img-fluid" alt="Notícia 3" />
+              <div class="col-md-5 news-content">
+                <h3>Transporte eco-friendly</h3>
+                <p>
+                  Explore opções de transporte sustentável, desde andar de
+                  bicicleta e a pé até usar transporte público. Descubra os
+                  benefícios de reduzir sua pegada de carbono e melhorar a
+                  qualidade do ar.
+                </p>
+                <a href="#" class="btn btn-primary">Leia mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Quarta notícia -->
+        <div class="row">
+          <div class="mb-4 mt-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="col-md-5 news-content">
+                <h3>Atualizações eficientes em energia para casa</h3>
+                <p>
+                  Atualize sua casa com eletrodomésticos e práticas
+                  energeticamente eficientes. Saiba mais sobre painéis solares,
+                  iluminação LED e termostatos inteligentes que podem ajudar a
+                  economizar dinheiro e reduzir o consumo de energia.
+                </p>
+                <a href="#" class="btn btn-primary">Leia mais</a>
+              </div>
+              <img src="../img/blog1.png" class="col-md-5 img-fluid" alt="Notícia 4" />
+            </div>
+          </div>
+        </div>
+        <!-- Quinta notícia -->
+        <div class="row">
+          <div class="mb-4 mt-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <img src="../img/blog2.png" class="col-md-5 img-fluid" alt="Notícia 5" />
+              <div class="col-md-5 news-content">
+                <h3>Estilo de vida sem desperdício</h3>
+                <p>
+                  Adote um estilo de vida sem desperdício e minimize seu impacto
+                  nos aterros sanitários. Saiba mais sobre a redução de
+                  plásticos de uso único, compostagem e fazer escolhas
+                  conscientes para criar um futuro sustentável.
+                </p>
+                <a href="#" class="btn btn-primary">Leia mais</a>
               </div>
             </div>
           </div>
