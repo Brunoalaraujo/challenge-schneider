@@ -25,31 +25,78 @@
     <main
       class="d-flex flex-column justify-content-center align-items-center flex-grow-1"
     >
-     <div class="container d-flex align-items-center justify-content-center min-vh-100">
-    <div class="card p-4" style="max-width: 400px; width: 100%;">
-      <h2 class="text-center mb-4 text--color">Login</h2>
-      <form onsubmit="">
-        <div class="mb-3">
-          <label for="email" class="form-label text--color">EMAIL</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="example@schneider.com" required>
+      <div
+        class="container d-flex align-items-center justify-content-center min-vh-100"
+      >
+        <div class="card p-4" style="max-width: 400px; width: 100%">
+          <h2 class="text-center mb-4 text--color">Login</h2>
+          <form onsubmit="">
+            <div class="mb-3">
+              <label for="email" class="form-label text--color">EMAIL</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="example@schneider.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label text--color"
+                >PASSWORD</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                placeholder="*****"
+                required
+              />
+            </div>
+            <div
+              class="mb-3 form-check d-flex align-items-center justify-content-center"
+            >
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="rememberMe"
+                  name="rememberMe"
+                />
+                <label class="form-check-label" for="rememberMe"
+                  >Lembrar de mim</label
+                >
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button id="btnEntrar" type="submit" class="btn btn-primary w-50">
+                Entrar
+              </button>
+            </div>
+          </form>
         </div>
-        <div class="mb-3">
-          <label for="password" class="form-label text--color">PASSWORD</label>
-          <input type="password" class="form-control" id="password" name="password" placeholder="*****" required>
-        </div>
-        <div class="mb-3 form-check d-flex align-items-center justify-content-center">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
-            <label class="form-check-label" for="rememberMe">Lembrar de mim</label>
+      </div>
+    </main>
+    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-danger" id="errorModalLabel">Erro de Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            Credenciais incorretas. Para teste de usuário, use:<br>
+            User: user@schneider.com<br>
+            Senha: 123456
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
           </div>
         </div>
-        <div class="d-flex justify-content-center">
-          <button id="btnEntrar" type="submit" class="btn btn-primary w-50">Entrar</button>
-        </div>
-      </form>
+      </div>
     </div>
-  </div>
-    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

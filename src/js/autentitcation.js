@@ -1,4 +1,5 @@
 const btnEntrar = document.getElementById("btnEntrar");
+const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
 
 btnEntrar.addEventListener("click", (event) => {
   event.preventDefault();
@@ -12,8 +13,8 @@ btnEntrar.addEventListener("click", (event) => {
   if (emailInput == emailUser && passwordInput == passwordUser) {
     window.location.href = "./src/pages/blog.html";
   } else if (emailInput == emailAdmim && passwordInput == passwordAdmin) {
-    alert("Página em Construção");
+    errorModal.show();
   } else {
-    alert("Credencial Errada");
+    errorModal.show();
   }
 });
