@@ -178,3 +178,17 @@ button.btn.btn-primary {
 .mom{
     margin-top: 80px;
 }
+
+.borderSquare--left{
+    border: 3px solid transparent;
+    border-radius: 100px 1px;
+}
+
+.borderSquare--right{
+    border: 3px solid transparent;
+    border-radius: 1px 100px;
+}
+
+.back{
+    color: var(--color-black)!important;
+}
