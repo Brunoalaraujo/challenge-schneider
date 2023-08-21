@@ -135,6 +135,7 @@
     display: none;
     font-size: 44px;
     color: #3DCD58;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
@@ -164,4 +165,16 @@ hr{
 
 button.btn.btn-primary {
     margin-bottom: 15px;
+}
+
+.page{
+    color: var(--color-black)
+}
+
+#menumobile{
+    margin-bottom: 70px;
+}
+
+.mom{
+    margin-top: 80px;
 }
