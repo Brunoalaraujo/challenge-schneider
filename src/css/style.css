@@ -1,3 +1,9 @@
+/* <!--  
+RM: 550173 - VICTOR JABER
+RM: 550817 - BRUNO ANDRADE
+RM: 98681 - BRUNO PERDIGÃO SANTOS     
+--> */
+
 :root {
   --color-bg-gray-new: #f3f2f2;
   --color-black: #000;
@@ -189,4 +195,14 @@ button.btn.btn-primary {
 
 .text--justify {
   text-align: justify;
+}
+
+.users {
+  overflow: hidden; 
+  transition: transform 0.3s; 
+}
+
+.users:hover{
+  transform: scale(1.05); 
+  cursor: pointer;
 }
