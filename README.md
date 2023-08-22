@@ -10,3 +10,5 @@ Grupo:
 RM: 550173 - VICTOR JABER
 RM: 550817 - BRUNO ANDRADE
 RM: 98681 - BRUNO PERDIGÃO SANTOS
+
+Teste [AQUI](https://challenge-schneider-tau.vercel.app/)
